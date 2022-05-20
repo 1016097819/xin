@@ -1,191 +1,221 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex 布局</title>
-    <meta name="description" content="Re01 编程课的Flex布局演示。" />
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>给dll的告白</title>
+        <link type="text/css" rel="stylesheet" href="./js/default.css">
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/jscex.min.js"></script>
+		<script type="text/javascript" src="./js/jscex-parser.js"></script>
+		<script type="text/javascript" src="./js/jscex-jit.js"></script>
+		<script type="text/javascript" src="./js/jscex-builderbase.min.js"></script>
+		<script type="text/javascript" src="./js/jscex-async.min.js"></script>
+		<script type="text/javascript" src="./js/jscex-async-powerpack.min.js"></script>
+		<script type="text/javascript" src="./js/functions.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./js/love.js" charset="utf-8"></script>
+	    <style type="text/css">
+<!--
+.STYLE1 {color: #666666}
+-->
+        </style>
+</head>
+    <body>
+			<audio autoplay="autopaly">
+					<source src="renxi.mp3" type="audio/mp3" />
+			</audio>  
+        <div id="main">
+            <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
+             <div id="wrap">
+                <div id="text">
+			        <div id="code">
+			      <font color="#FF0000">  	<span class="say">丁俐丽，我爱你，这次用新的方式展示对你的告白</span><br>
+						<span class="say"> </span><br>
+<span class="say"> 我知道我不会甜言蜜语，但是我会用行动证明一切</span><br>
+						<span class="say"> </span><br>
+						
+						
+			        	
+			        	<span class="say">两年来，你陪我经历了人生中大大小小的很多事</span><br>
+<span class="say">也有过一些小矛盾，但更多的是开心和幸福</span><br>
+<span class="say">感谢你的陪伴，感谢你的理解</span><br>
 
-    <style>
-      body {
-        margin: 0;
-        /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
-        height: 100vh;
-        background-color: #eee;
-      }
-      /* * {
-        border: 1px solid #333;
-      } */
-      .flex {
-        display: flex;
-      }
-      /* 占满比例 */
-      .flex1 {
-        flex: 1;
-      }
-      /* 竖向 */
-      .column {
-        flex-direction: column;
-      }
-      /* 阴影 */
-      .yinYing {
-        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
-          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
-      }
-        h2 {
-        font-size: 30px;
-        margin: 10px;
-        background-color: #fff;
-        color: rgb(8, 8, 8);
-        text-align: center;
-      }
-      /* 白色背景 */
-      .baiSe {
-        background-color: #fff;
-      }
-      /* 上下左右外边距 */
-      .mg8 {
-        margin: 8px;
-      }
-      /* 右外边距 */
-      .mgr8 {
-        margin-right: 8px;
-      }
-      /* 上外边距 */
-      .mgt8 {
-        margin-top: 8px;
-      }
-      /* 四个小盒子 */
-      .shuJu {
-        height: 100px;
-      }
-      /* 中间的大盒子 */
-      .lieBiaoXiang {
-        height: 160px;
-      }
-      /* 导航条 */
-      .daoHang {
-        padding: 10px 20px;
-        border-bottom: 1px solid rgb(201, 201, 201);
-        font-size: 14px;
-        color: #666;
-      }
-      .neiRong::-webkit-scrollbar {
-        display: none; /* Chrome Safari */
-      }
+ <span class="say">我们会一起白头到老的，是吧？</span><br>
+						<span class="say"> </span><br>
+                        <span class="say"><span class="space"></span> -- 爱你的-臧志鑫--</span>
+			  </font></p>
+      </div>
+                </div>
+                <div id="clock-box">
+                    <span class="STYLE1"></span><font color="#33CC00">亲爱的，我喜欢你</font>
+<span class="STYLE1">已经……</span>
+                  <div id="clock"></div>
+              </div>
+                <canvas id="canvas" width="1100" height="680"></canvas>
+            </div>
+            
+        </div>
+    
+    <script>
+    </script>
 
-      /* 当屏幕宽度小于600px时要改变的css */
-      @media (max-width: 600px) {
-        /* 小屏幕上取消侧边栏，后面学js时会教怎么弹出 */
-        .ceBian {
-          display: none;
+    <script>
+    (function(){
+        var canvas = $('#canvas');
+		
+        if (!canvas[0].getContext) {
+            $("#error").show();
+            return false;        }
+
+        var width = canvas.width();
+        var height = canvas.height();        
+        canvas.attr("width", width);
+        canvas.attr("height", height);
+        var opts = {
+            seed: {
+                x: width / 2 - 20,
+                color: "rgb(190, 26, 37)",
+                scale: 2
+            },
+            branch: [
+                [535, 680, 570, 250, 500, 200, 30, 100, [
+                    [540, 500, 455, 417, 340, 400, 13, 100, [
+                        [450, 435, 434, 430, 394, 395, 2, 40]
+                    ]],
+                    [550, 445, 600, 356, 680, 345, 12, 100, [
+                        [578, 400, 648, 409, 661, 426, 3, 80]
+                    ]],
+                    [539, 281, 537, 248, 534, 217, 3, 40],
+                    [546, 397, 413, 247, 328, 244, 9, 80, [
+                        [427, 286, 383, 253, 371, 205, 2, 40],
+                        [498, 345, 435, 315, 395, 330, 4, 60]
+                    ]],
+                    [546, 357, 608, 252, 678, 221, 6, 100, [
+                        [590, 293, 646, 277, 648, 271, 2, 80]
+                    ]]
+                ]] 
+            ],
+            bloom: {
+                num: 700,
+                width: 1080,
+                height: 650,
+            },
+            footer: {
+                width: 1200,
+                height: 5,
+                speed: 10,
+            }
         }
-        /* 内容栏和数据栏flex方向改为竖向 */
-        .neiRong {
-          flex-direction: column;
-        }
-        .shuJuQu {
-          flex-direction: column;
-        }
-        /* 右区加左外边距 */
-        .youQu {
-          margin-left: 8px;
-        }
-        /* 数据块外边距，大小改为自动宽高 */
-        .shuJu {
-          margin: 0 0 8px;
-          flex: auto;
-        }
-      }
-    </style>
-  </head>
-  <body class="flex">
-    <!-- 侧边栏 -->
-    <div
-      style="width: 200px; z-index: 3"
-      class="ceBian flex column baiSe yinYing"
-    >
-      <!-- 侧边头像栏 -->
-      <div
-        style="
-          padding: 10px;
-          align-items: center;
-          justify-content: center;
-          border-bottom: 1px solid #999;
-        "
-        class="flex"
-      >
-        <img
-          alt="logo"
-          src="22.png"
-          width="40px"
-          height="40px"
-        />
-        <div style="margin-left: 10px">臧志鑫</div>
-      </div>
-      <!-- 导航栏 -->
-      <div class="flex1">
-        <div
-          onclick="window.location.href= '11.html';return false"
-          class="daoHang"
-        >
-          导航1
-        </div>
-        <div
-          onclick="window.location.href= '22.html';return false"
-          class="daoHang"
-        >
-          导航2
-        </div>
-        <div class="daoHang">导航3</div>
-        <div class="daoHang">导航4</div>
-        <div class="daoHang">导航5</div>
-      </div>
-    </div>
-    <!-- 主区域 -->
-    <div class="flex flex1 column">
-      <!-- 头部栏 -->
-      <div style="height: 60px; z-index: 2" class="baiSe yinYing">
-        <h2>欢迎来到我的个人网站</h2>
-      </div>
-      <!-- 内容区 -->
-      <div class="flex flex1 neiRong" style="overflow: auto">
-        <!-- 左区 -->
-        <div style="flex: 3" class="flex column mg8">
-          <!-- 数据区 -->
-          <div class="flex shuJuQu">
-            <!-- 四个小块显示重点数据 -->
-            <div class="shuJu baiSe yinYing flex1 mgr8">111</div>
-            <div class="shuJu baiSe yinYing flex1 mgr8">222</div>
-            <div class="shuJu baiSe yinYing flex1 mgr8">333</div>
-            <div class="shuJu baiSe yinYing flex1">444</div>
-          </div>
-          <!-- 列表区，列表数据可以无限增加 -->
-          <div class="flex column">
-            <!-- 列表项 -->
-            <div class="lieBiaoXiang mgt8 baiSe yinYing">还没想好放什么</div>
-            <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
-            <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
-            <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
-            <div class="lieBiaoXiang mgt8 baiSe yinYing"></div>
-          </div>
-        </div>
-        <!-- 右区 -->
-        <div style="flex: 1" class="youQu flex column mgr8 mgt8">
-          <!-- 提示区 -->
-          <div style="height: 150px" class="baiSe yinYing"></div>
-          <!-- 消息区 -->
-          <div style="height: 300px" class="mgt8 baiSe yinYing"></div>
-        </div>
-      </div>
-    </div>
-  </body>
+
+        var tree = new Tree(canvas[0], width, height, opts);
+        var seed = tree.seed;
+        var foot = tree.footer;
+        var hold = 1;
+
+        canvas.click(function(e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            if (seed.hover(x, y)) {
+                hold = 0; 
+                canvas.unbind("click");
+                canvas.unbind("mousemove");
+                canvas.removeClass('hand');
+            }
+        }).mousemove(function(e){
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            canvas.toggleClass('hand', seed.hover(x, y));
+        });
+
+        var seedAnimate = eval(Jscex.compile("async", function () {
+            seed.draw();
+            while (hold) {
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canScale()) {
+                seed.scale(0.95);
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canMove()) {
+                seed.move(0, 2);
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+        }));
+
+        var growAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.grow();
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canGrow());
+        }));
+
+        var flowAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.flower(2);
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canFlower());
+        }));
+
+        var moveAnimate = eval(Jscex.compile("async", function () {
+            tree.snapshot("p1", 240, 0, 610, 680);
+            while (tree.move("p1", 500, 0)) {
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+            foot.draw();
+            tree.snapshot("p2", 500, 0, 610, 680);
+
+            // 会有闪烁不得意这样做, (＞﹏＜)
+            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+            canvas.css("background", "#ffe");
+            $await(Jscex.Async.sleep(300));
+            canvas.css("background", "none");
+        }));
+
+        var jumpAnimate = eval(Jscex.compile("async", function () {
+            var ctx = tree.ctx;
+            while (true) {
+                tree.ctx.clearRect(0, 0, width, height);
+                tree.jump();
+                foot.draw();
+                $await(Jscex.Async.sleep(25));
+            }
+        }));
+
+        var textAnimate = eval(Jscex.compile("async", function () {
+		    var together = new Date();
+		    together.setFullYear(2020,5 , 4); 			//时间年月日
+		    together.setHours(21);						//小时	
+		    together.setMinutes(30);					//分钟
+		    together.setSeconds(0);					//秒前一位
+		    together.setMilliseconds(2);				//秒第二位
+
+		    $("#code").show().typewriter();
+            $("#clock-box").fadeIn(500);
+            while (true) {
+                timeElapse(together);
+                $await(Jscex.Async.sleep(1000));
+            }
+        }));
+
+        var runAsync = eval(Jscex.compile("async", function () {
+            $await(seedAnimate());
+            $await(growAnimate());
+            $await(flowAnimate());
+            $await(moveAnimate());
+
+            textAnimate().start();
+
+            $await(jumpAnimate());
+        }));
+
+        runAsync().start();
+    })();
+    </script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+<p>来源：<a href="http://www.php.cn/" target="_blank"></a></p>
+</div>
+</body>
 </html>
+
